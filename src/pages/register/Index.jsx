@@ -26,6 +26,7 @@ export function Register() {
                     ? `m${Math.floor(Math.random() * 9)}.jpg`
                     : `w${Math.floor(Math.random() * 4)}.jpg`;
 
+            document.cookie = `logged=true`;
             document.cookie = `email=${email}`;
             document.cookie = `username=${username}`;
             document.cookie = `user_image=${user_image}`;
@@ -42,7 +43,7 @@ export function Register() {
                 className={Style.register_container}
             >
                 <div className={Style.form_container}>
-                    <span>ENTER CHAT</span>
+                    <span>ENTER THE CHAT</span>
                     <small>Email</small>
                     <input
                         type="email"

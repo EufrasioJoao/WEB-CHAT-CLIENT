@@ -18,7 +18,8 @@ export function Profile() {
 
     // logs out the user
     const handleLogout = async () => {
-        document.cookie = "username= ";
+        document.cookie = `logged=false`;
+
         navigate("/");
     };
 

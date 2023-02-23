@@ -16,7 +16,7 @@ export function Header() {
             <nav>
                 <div className={Style.logo_box}>
                     <div className={showSearch ? Style.logoN : Style.logo}>
-                        WEB CHAT
+                        CHAT
                     </div>
                 </div>
 
@@ -57,12 +57,14 @@ export function Header() {
                         </div>
                     )}
 
-                    <div
-                        onClick={() => navigate("/profile")}
-                        className={Style.profile_}
-                    >
-                        <User color="tomato" size={30} />
-                    </div>
+                    {!showSearch && (
+                        <div
+                            onClick={() => navigate("/profile")}
+                            className={Style.profile_}
+                        >
+                            <User color="tomato" size={30} />
+                        </div>
+                    )}
                 </div>
             </nav>
         </header>

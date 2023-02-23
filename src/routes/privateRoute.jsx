@@ -10,7 +10,7 @@ export function PrivateRoute({ children }) {
                 [key.trim()]: decodeURIComponent(value),
             }),
             {}
-        )?.username != "" ? (
+        )?.logged == "true" ? (
         children
     ) : document.cookie
           .split(";")
@@ -21,7 +21,7 @@ export function PrivateRoute({ children }) {
                   [key.trim()]: decodeURIComponent(value),
               }),
               {}
-          )?.username == "" ? (
+          )?.logged == "false" ? (
         <Navigate to="/" />
     ) : (
         <Navigate to="/" />

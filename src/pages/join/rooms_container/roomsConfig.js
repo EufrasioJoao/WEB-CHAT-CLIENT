@@ -1,13 +1,5 @@
 export const roomsArray = [
     {
-        members: 30,
-        subscribers: 8,
-        roomName: "Sociology",
-        imageUrl: "/assets/images/sociology.jpg",
-        description:
-            "Sociology Room, in here you can talk with people all around the world about your favorite topic, Sociology...",
-    },
-    {
         members: 80,
         subscribers: 98,
         roomName: "Programming",
@@ -30,6 +22,14 @@ export const roomsArray = [
         imageUrl: "/assets/images/dancing.jpg",
         description:
             "Dancing Room, in here you can talk with people all around the world about your favorite topic, Dancing...",
+    },
+    {
+        members: 30,
+        subscribers: 8,
+        roomName: "Sociology",
+        imageUrl: "/assets/images/sociology.jpg",
+        description:
+            "Sociology Room, in here you can talk with people all around the world about your favorite topic, Sociology...",
     },
     {
         members: 18,
